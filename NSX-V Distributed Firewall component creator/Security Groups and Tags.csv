@@ -1,0 +1,5 @@
+SGName,STName,Description
+SG-ENVID-dev,ST-ENVID-dev,Used for environment segregation
+SG-ENVID-prod,ST-ENVID-prod,Used for environment segregation
+SG-TYPE-app,ST-TYPE-app,App server
+SG-TYPE-web,ST-TYPE-web,Web server

@@ -1,0 +1,3 @@
+SGName,SGDescription,IPSetName,IPSetAddresses,IPSetDescription
+SG-OTHER-NTP,NTP servers,IPS-NTP,"1.2.3.4,15.6.7.8",NTP servers
+SG-OTHER-vCenter,vCenter server,IPS-vCenter,10.12.14.15,vCenter servers

@@ -1,0 +1,153 @@
+SGName,SGXML
+SG-SPECIAL-app-DEVQA,"<securitygroup>
+        <objectId></objectId>
+        <objectTypeName></objectTypeName>
+        <vsmUuid></vsmUuid>
+        <nodeId></nodeId>
+        <revision>0</revision>
+        <type>
+            <typeName></typeName>
+        </type>
+        <name>SG-SPECIAL-app-DEVQA</name>
+        <description>All DEVQA app servers</description>
+        <dynamicMemberDefinition>
+            <dynamicSet>
+                <operator>OR</operator>
+                <dynamicCriteria>
+                    <operator>OR</operator>
+                    <key>VM.SECURITY_TAG</key>
+                    <criteria>=</criteria>
+                    <value>ST-TYPE-app</value>
+                    <isValid>true</isValid>
+                </dynamicCriteria>
+            </dynamicSet>
+            <dynamicSet>
+                <operator>AND</operator>
+                <dynamicCriteria>
+                    <operator>OR</operator>
+                    <key>VM.SECURITY_TAG</key>
+                    <criteria>contains</criteria>
+                    <value>ST-ENVID-q</value>
+                    <isValid>true</isValid>
+                </dynamicCriteria>
+                <dynamicCriteria>
+                    <operator>OR</operator>
+                    <key>VM.SECURITY_TAG</key>
+                    <criteria>contains</criteria>
+                    <value>ST-ENVID-d</value>
+                    <isValid>true</isValid>
+                </dynamicCriteria>
+            </dynamicSet>
+        </dynamicMemberDefinition>
+</securitygroup>"
+SG-SPECIAL-web-DEVQA,"<securitygroup>
+        <objectId></objectId>
+        <objectTypeName></objectTypeName>
+        <vsmUuid></vsmUuid>
+        <nodeId></nodeId>
+        <revision>0</revision>
+        <type>
+            <typeName></typeName>
+        </type>
+        <name>SG-SPECIAL-web-DEVQA</name>
+        <description>All DEVQA web servers</description>
+        <dynamicMemberDefinition>
+            <dynamicSet>
+                <operator>OR</operator>
+                <dynamicCriteria>
+                    <operator>OR</operator>
+                    <key>VM.SECURITY_TAG</key>
+                    <criteria>=</criteria>
+                    <value>ST-TYPE-web</value>
+                    <isValid>true</isValid>
+                </dynamicCriteria>
+            </dynamicSet>
+            <dynamicSet>
+                <operator>AND</operator>
+                <dynamicCriteria>
+                    <operator>OR</operator>
+                    <key>VM.SECURITY_TAG</key>
+                    <criteria>contains</criteria>
+                    <value>ST-ENVID-q</value>
+                    <isValid>true</isValid>
+                </dynamicCriteria>
+                <dynamicCriteria>
+                    <operator>OR</operator>
+                    <key>VM.SECURITY_TAG</key>
+                    <criteria>contains</criteria>
+                    <value>ST-ENVID-d</value>
+                    <isValid>true</isValid>
+                </dynamicCriteria>
+            </dynamicSet>
+        </dynamicMemberDefinition>
+</securitygroup>"
+SG-SPECIAL-app-PROD,"<securitygroup>
+        <objectId></objectId>
+        <objectTypeName></objectTypeName>
+        <vsmUuid></vsmUuid>
+        <nodeId></nodeId>
+        <revision>0</revision>
+        <type>
+            <typeName></typeName>
+        </type>
+        <name>SG-SPECIAL-app-PROD</name>
+        <description>All PROD app servers</description>
+        <dynamicMemberDefinition>
+            <dynamicSet>
+                <operator>OR</operator>
+                <dynamicCriteria>
+                    <operator>OR</operator>
+                    <key>VM.SECURITY_TAG</key>
+                    <criteria>=</criteria>
+                    <value>ST-TYPE-app</value>
+                    <isValid>true</isValid>
+                </dynamicCriteria>
+            </dynamicSet>
+            <dynamicSet>
+                <operator>AND</operator>
+                <dynamicCriteria>
+                    <operator>OR</operator>
+                    <key>VM.SECURITY_TAG</key>
+                    <criteria>contains</criteria>
+                    <value>ST-ENVID-p</value>
+                    <isValid>true</isValid>
+                </dynamicCriteria>
+            </dynamicSet>
+        </dynamicMemberDefinition>
+</securitygroup>"
+SG-SPECIAL-web-PROD,"<securitygroup>
+        <objectId></objectId>
+        <objectTypeName></objectTypeName>
+        <vsmUuid></vsmUuid>
+        <nodeId></nodeId>
+        <revision>0</revision>
+        <type>
+            <typeName></typeName>
+        </type>
+        <name>SG-SPECIAL-web-PROD</name>
+        <description>All PROD web servers</description>
+        <dynamicMemberDefinition>
+            <dynamicSet>
+                <operator>OR</operator>
+                <dynamicCriteria>
+                    <operator>OR</operator>
+                    <key>VM.SECURITY_TAG</key>
+                    <criteria>=</criteria>
+                    <value>ST-TYPE-web</value>
+                    <isValid>true</isValid>
+                </dynamicCriteria>
+            </dynamicSet>
+            <dynamicSet>
+                <operator>AND</operator>
+                <dynamicCriteria>
+                    <operator>OR</operator>
+                    <key>VM.SECURITY_TAG</key>
+                    <criteria>contains</criteria>
+                    <value>ST-ENVID-p</value>
+                    <isValid>true</isValid>
+                </dynamicCriteria>
+            </dynamicSet>
+        </dynamicMemberDefinition>
+</securitygroup>"
+,
+,
